@@ -6,8 +6,16 @@
 *.swp
 .buildlog/
 .history
+.DS_Store
+.atom/
+.buildlog/
+.svn/
 
-
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
 
 # Flutter repo-specific
 /bin/cache/
@@ -33,12 +41,14 @@ analysis_benchmark.json
 
 # Flutter/Dart/Pub related
 **/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 **/generated_plugin_registrant.dart
 .packages
 .pub-preload-cache/
+.pub-cache/
 .pub/
 build/
 flutter_*.png
@@ -117,3 +127,9 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Obfuscation related
+app.*.map.json
